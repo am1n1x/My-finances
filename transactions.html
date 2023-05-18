@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>История транзакций</title>
+
+        <!-- CSS FILES -->      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/apexcharts.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    <header class="navbar sticky-top flex-md-nowrap">
+        <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi-box"></i>
+                Мои финансы
+            </a>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
+                <div class="position-sticky py-4 px-3 sidebar-sticky">
+                    <ul class="nav flex-column h-100">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">
+                                <i class="bi-house-fill me-2"></i>
+                                Кошелек
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="transactions.html">
+                                <i class="bi-wallet me-2"></i>
+                                История
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">
+                                <i class="bi-person me-2"></i>
+                                Профиль
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="setting.html">
+                                <i class="bi-gear me-2"></i>
+                                Настройки
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="help-center.html">
+                                <i class="bi-question-circle me-2"></i>
+                                Служба поддержки
+                            </a>
+                        </li>
+
+                        <li class="nav-item border-top mt-auto pt-2">
+                            <a class="nav-link" href="#">
+                                <i class="bi-box-arrow-left me-2"></i>
+                                Выйти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+
+            <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+                    <div class="title-group mb-3">
+                        <h1 class="h2 mb-0">История транзакций</h1>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-lg-12 col-12">
+                            <div class="custom-block bg-white">
+                                <h5 class="mb-4">Детализация движения денежных средств</h5>
+
+                                <div class="table-responsive">
+                                    <table class="account-table table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Дата</th>
+
+                                                <th scope="col">Время</th>
+
+                                                <th scope="col">Описание</th>
+
+                                                <th scope="col">Тип платежа</th>
+
+                                                <th scope="col">Сумма</th>
+
+                                                <th scope="col">Баланс</th>
+
+                                                <th scope="col">Статус</th>
+
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row">5 июля 2023</td>
+                                        <td scope="row">22:00</td>
+
+                                        <td scope="row">Покупки</td>
+
+                                        <td scope="row">Перевод C2C</td>
+
+                                        <td class="text-danger" scope="row">
+                                            <span class="me-1">-</span>
+                                            1 000.00
+                                        </td>
+
+                                        <td scope="row">55 000.00</td>
+
+                                        <td scope="row">
+                                            <span class="badge text-bg-danger">
+                                                В ожидании
+                                            </span>
+                                        </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">2 июля 2023</td>
+
+                                            <td scope="row">10:42</td>
+
+                                            <td scope="row">Доставка еды</td>
+
+                                            <td scope="row">Пополнение мобильного</td>
+
+                                            <td class="text-success" scope="row">
+                                                <span class="me-1">+</span>
+                                                2 500
+                                            </td>
+
+                                            <td scope="row">56 000.00</td>
+
+                                            <td scope="row">
+                                            <span class="badge text-bg-success">
+                                                Успешно
+                                            </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">28 июня 2023</td>
+
+                                            <td scope="row">20:20</td>
+
+                                            <td scope="row">Выставление счетов</td>
+
+                                            <td scope="row">Государство</td>
+
+                                            <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>500</td>
+
+                                            <td scope="row">53 500.00</td>
+
+                                            <td scope="row">
+                                            <span class="badge text-bg-success">
+                                                Успешно
+                                            </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">24 июня 2023</td>
+
+                                            <td scope="row">22:48</td>
+
+                                            <td scope="row">Shopee</td>
+
+                                            <td scope="row">QR-код</td>
+
+                                            <td class="text-danger" scope="row">
+                                                <span class="me-2">-</span>3 800</td>
+
+                                            <td scope="row">53 000.00</td>
+
+                                            <td scope="row">
+                                            <span class="badge text-bg-dark">
+                                                Отменено
+                                            </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">12 июня 2023</td>
+
+                                            <td scope="row">00:30</td>
+
+                                            <td scope="row">Доставка еды</td>
+
+                                            <td scope="row">Пополнение мобильного</td>
+
+                                            <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>2 500</td>
+
+                                            <td scope="row">49 200.00</td>
+
+                                            <td scope="row">
+                                                <span class="badge text-bg-success">
+                                                    Успешно
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">31 мая 2023</td>
+
+                                            <td scope="row">14:40</td>
+
+                                            <td scope="row">Доставка еды</td>
+
+                                            <td scope="row">Пополнение мобильного</td>
+
+                                            <td class="text-success" scope="row">
+                                            <span class="me-2">+</span>500</td>
+
+                                            <td scope="row">49 200.00</td>
+
+                                            <td scope="row">
+                                                <span class="badge text-bg-success">
+                                                    Успешно
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">22 мая 2023</td>
+
+                                            <td scope="row">08:50</td>
+
+                                            <td scope="row">Доставка еды</td>
+
+                                            <td scope="row">Пополнение мобильного</td>
+
+                                            <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>500</td>
+
+                                            <td scope="row">49 200.00</td>
+
+                                            <td scope="row">
+                                                <span class="badge text-bg-success">
+                                                    Успешно
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">20 мая 2023</td>
+
+                                            <td scope="row">18:45</td>
+
+                                            <td scope="row">Доставка еды</td>
+
+                                            <td scope="row">Пополнение мобильного</td>
+
+                                            <td class="text-danger" scope="row">
+                                                <span class="me-2">-</span>5 000</td>
+
+                                            <td scope="row">49 200.00</td>
+
+                                            <td scope="row">
+                                                <span class="badge text-bg-danger">
+                                                    В ожидании
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">28 апреля 2023</td>
+
+                                            <td scope="row">11:20</td>
+
+                                            <td scope="row">Доставка еды</td>
+
+                                            <td scope="row">Пополнение мобильного</td>
+
+                                            <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>8 560</td>
+
+                                            <td scope="row">49 200.00</td>
+
+                                            <td scope="row">
+                                                <span class="badge text-bg-success">
+                                                    Успешно
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">16 апреля 2023</td>
+
+                                            <td scope="row">23:00</td>
+
+                                            <td scope="row">Доставка еды</td>
+
+                                            <td scope="row">Пополнение мобильного</td>
+
+                                            <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>500</td>
+
+                                            <td scope="row">49 200.00</td>
+
+                                            <td scope="row">
+                                                <span class="badge text-bg-danger">
+                                                    В ожидании
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+
+    </body>
+</html>
