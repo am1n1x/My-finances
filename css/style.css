@@ -82,31 +82,8 @@ body {
 /*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
-.custom-btn {
-  background: var(--custom-btn-bg-color);
-  border: 2px solid transparent;
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-bold);
-  line-height: normal;
-  transition: all 0.3s;
-  padding: 10px 20px;
-}
-
 .custom-btn:hover {
   background: var(--custom-btn-bg-hover-color);
-  color: var(--white-color);
-}
-
-.custom-border-btn {
-  background: transparent;
-  border: 2px solid var(--custom-btn-bg-color);
-  color: var(--custom-btn-bg-color);
-}
-
-.custom-btn-bg-white {
-  border-color: var(--white-color);
   color: var(--white-color);
 }
 
@@ -231,31 +208,6 @@ body {
   transform: rotate(-25deg);
 }
 
-.custom-block-edit-icon {
-  background: var(--primary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-}
-
-.custom-block-edit-icon:hover {
-  background: var(--custom-btn-bg-color);
-  color: var(--white-color);
-}
-
-.custom-block-profile .custom-block-edit-icon {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.custom-block-profile-front .custom-block-edit-icon {
-  bottom: 10px;
-}
-
 .custom-block-bottom {
   background: var(--custom-btn-bg-color);
   text-align: center;
@@ -300,10 +252,6 @@ body {
   text-transform: uppercase;
 }
 
-.custom-block-numbers {
-  margin-bottom: 10px;
-}
-
 .custom-block-numbers span {
   color: var(--dark-color);
   display: inline-block;
@@ -314,26 +262,9 @@ body {
   top: 3px;
 }
 
-.custom-block-image {
-  border: 10px solid var(--primary-color);
-  border-radius: 100%;
-  position: absolute;
-  top: -60px;
-  right: 20px;
-  left: 0;
-  width: 120px;
-  height: 120px;
-  margin: auto;
-  object-fit: cover;
-}
-
 .custom-block-exchange,
 .custom-block-contact {
   background: var(--custom-btn-bg-color);
-}
-
-.custom-block-exchange .border-bottom {
-  border-bottom: 1px solid #c6e5e7 !important;
 }
 
 .custom-block-exchange h6 {
